@@ -5,10 +5,11 @@
 
         <div class="heading">
             <p class="beginning">
-                La  boutik
+                MACQ
             </p>
             <p class="title">
                 MACQ
+                <br> La boutik </br>
             </p>
         </div>
 
@@ -16,10 +17,10 @@
             <span> <img src="" alt=""></span>
             <div class="wrap">
                 <a href="/boutique"><div></div></a>
-                <a href="/Apropos"><div></div></a>
-                <a href="/Mortuaire"><div></div></a>
+                <a href="/apropos"><div></div></a>
+                <a href="/mortuaire"><div></div></a>
                 <a href="/Contact"><div></div></a>
-                <a href="/Création"><div></div></a>
+                <a href="/evenement"><div></div></a>
             </div>
         </div>
 
@@ -55,7 +56,7 @@
 
         body,html{margin:0;padding:0;height:100%;}
         body{
-            background:#E3DFD2;
+            background:#FFFFFF;
             height:100%
         }
         .wrap{
@@ -83,7 +84,46 @@
             transition:opacity .5s;
             border-radius:inherit;
         }
+        a:nth-child(1){;
+            background-size:cover;
+            opacity:.5;
+            transition:opacity .5s;
+            border-radius:inherit;
+        }
         a:nth-child(1){
+            border-radius:40vmin 0 0 0;
+            transform-origin: 110% 110%;
+            transition:transform .4s .15s;
+        }
+        a:nth-child(1) div{
+            background-image:none;
+        }
+        a:nth-child(2){
+            border-radius:0 40vmin 0 0;
+            left:52.5%;
+            transform-origin: -10% 110%;
+            transition:transform .4s .2s;
+        }
+        a:nth-child(2) div{
+            background-image:none;
+        }
+        a:nth-child(3){
+            border-radius:0 0 0 40vmin;
+            top:52.5%;
+            transform-origin: 110% -10%;
+            transition:transform .4s .25s;
+        }
+        a:nth-child(3) div{
+            background-image:none;
+        }
+        a:nth-child(4){
+            border-radius:0 0 40vmin 0;
+            top:52.5%; left:52.5%;
+            transform-origin: -10% -10%;
+            transition:transform .4s .3s;
+        }
+        a:nth-child(4) div{
+            background-image: none;
             border-radius:40vmin 0 0 0;
             transform-origin: 110% 110%;
             transition:transform .4s .15s;
@@ -124,6 +164,7 @@
             border-radius:50vmin;
             box-shadow:0 0 0 5vmin #E3DFD2;
             transform:scale(1);
+            
         }
         a:nth-child(5) div{
             background-image: none;
@@ -209,32 +250,32 @@
         }
         .beginning, .title {
             position: absolute;
-            top: 50%;
+            top: 20%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
         @keyframes fadein-1 {
             0% {
                 color: transparent;
-                text-shadow:0 0 64px rgba(253,63,146,0);
+                text-shadow:0 0 64px rgba(0,0,0,0);
                 letter-spacing:10px;
             }
             25% {
                 color: transparent;
-                text-shadow:0 0 8px rgba(253,63,146,0.8);
+                text-shadow:0 0 8px rgba(0,0,0,0.8);
             }
             60% {
                 color: #dededf;
-                text-shadow:0 0 0px rgba(253,63,146,1);
+                text-shadow:0 0 0px rgba(0,0,0,1);
             }
             70% {
                 color: #cdcecf;
-                text-shadow:0 0 0px rgba(253,63,146,1);
+                text-shadow:0 0 0px rgba(0,0,0,1);
                 letter-spacing:0px;
             }
             100% {
                 color: transparent;
-                text-shadow:0 0 4px rgba(253,63,146,0);
+                text-shadow:0 0 4px rgba(0,0,0,0);
                 letter-spacing:5px;
             }
         }
@@ -243,20 +284,20 @@
             0 % {
                 opacity:0!important;
                 color:transparent;
-                text-shadow:0 80px 64px rgba(253,63,146,0);
+                text-shadow:0 80px 64px rgba(0,0,0,0);
             }
             50% {
                 opacity:0!important;
                 color:transparent;
-                text-shadow:0 30vh 64px rgba(253,63,146,0);
+                text-shadow:0 30vh 64px rgba(0,0,0,0);
             }
             75% {
                 opacity:1;
                 color:transparent;
-                text-shadow:0 0 4px rgba(253,63,146,.5);
+                text-shadow:0 0 4px rgba(0,0,0,.5);
             }
             100% {
-                color:#FD3F92;
+                color:#000000;
             }
         }
         .beginning::-moz-selection {
