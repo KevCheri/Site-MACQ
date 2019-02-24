@@ -6,14 +6,14 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 
-class evenementController extends Controller
+class offreserviceController extends Controller
 {
     /**
-     * @Route("/evenement", name="evenementpage")
+     * @Route("/offreservice", name="offreservicepage")
      */
     public function indexAction(Request $request)
     {
         // replace this example code with whatever you need
-        return $this->render('/evenement.html.twig');
+        return $this->render('/offreservice.html.twig');
     }
 }
