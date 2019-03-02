@@ -2,6 +2,8 @@
 
 namespace AppBundle\Controller;
 
+use AppBundle\Entity\Contact;
+use AppBundle\Form\ContactType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
@@ -20,8 +22,17 @@ class contactController extends Controller
      */
     public function indexAction(Request $request)
     {
+        $contact = new Contact();
+        $form = $this->createForm(ContactType::class, $contact);
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
+            dump($contact);die;
+            return $this->redirectToRoute('contactpage');
+        }
         // replace this example code with whatever you need
-        return $this->render('/contact.html.twig');
+        return $this->render('/contact.html.twig', [
+            'form' => $form->createView()
+        ]);
     }
 
     public function buildForm(FormBuilderInterface $builder, array $options)
